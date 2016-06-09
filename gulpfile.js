@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var hbsmaster = require('gulp-handlebars-master');
 var rename = require('gulp-rename');
 
-gulp.task('init', function () {
+gulp.task('hbs', function () {
 	var templatedata = {
+		"static": '../static',
 		"css-reset": {
 			"title": "css-reset"
 		},
@@ -29,17 +30,22 @@ gulp.task('init', function () {
 			}
 		}
 	};
+
 	gulp.src('./hb/pages/*.hbs')
-		.pipe(hbsmaster('./hb/layout.hbs', templatedata, opt))
+		.pipe(hbsmaster('./hb/layouts/page.hbs', templatedata, opt))
 		.pipe(rename({
 			extname: ".html"
 		}))
 		.pipe(gulp.dest('./p'));
 
 	gulp.src('./hb/index.hbs')
-		.pipe(hbsmaster('./hb/layout.hbs', templatedata, opt))
+		.pipe(hbsmaster('./hb/layouts/index.hbs', templatedata, opt))
 		.pipe(rename({
 			extname: ".html"
 		}))
 		.pipe(gulp.dest(''));
+});
+
+gulp.task('watch', function () {
+    gulp.watch('./hb/**/*.hbs', ['hbs']);
 });

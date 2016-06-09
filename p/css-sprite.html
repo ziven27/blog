@@ -11,27 +11,26 @@
     <meta name="author" content="ziven27,heartstar27@qq.com" />
     <meta name="baidu-site-verification" content="mSgh5Wzaiu" />
     <title>ziven27 - css-sprite</title>
-    <link rel="shortcut icon" href="src/favicon.ico" />
-    <link rel="stylesheet" href="static/blog.css">
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link rel="stylesheet" href="../static/blog.css">
   </head>
   <body>
-    <h1>css-sprite</h1>
-    <p><a href="../index.html">首页</a> &gt; <a href="../index.html">博客</a></p>
-    
+    <h1><a href="../index.html">27前端博客</a></h1>
+    <h2>css-sprite </h2>
     <p>我们先来看一下，bootstrap对于图片精灵的解决方案。</p>
-<pre class="m-code">
+<pre>
 	/*css 源码*/
 	[class^=”icon-“],[class*=” icon-“] {
-	    display: inline-block;
-	    width: 14px;
-	    height: 14px;
-	    margin-top: 1px;
-	    margin-right: .3em;
-	    line-height: 14px;
-	    vertical-align: text-top;
-	    background-image: url(“../img/glyphicons-halflings.png”);
-	    background-position: 14px 14px;
-	    background-repeat: no-repeat
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-top: 1px;
+	margin-right: .3em;
+	line-height: 14px;
+	vertical-align: text-top;
+	background-image: url(“../img/glyphicons-halflings.png”);
+	background-position: 14px 14px;
+	background-repeat: no-repeat
 	}
 	.icon-glass { background-position: 0 0; }
 	.icon-music { background-position: -24px 0; }
@@ -165,15 +164,6 @@
 	<p>图片群组命名规则: <code class="m-code">.i-[群组名]</code></p>
 	<p>图片命名规则: <code class="m-code">.i[群组名]-[图片id]</code> </p>
 	<p>这种方式的优点在于，一个类就是一个图标。彼此没有依赖，也解决了传统裹脚布类型命名方式。不过采用数字进行命名，也着实给人不友好的感觉（容易被同事吐槽）。想要知道哪个类对应哪个文件需要到文件夹里面进行查看。</p>
-	<p>图片高宽，和定位可以直接用css gaga 工具生成，也可以省掉这些琐碎的工作。不过这个工具有平台限制，目前好像只有windows版。</p>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?30709f8a251d3a53a8856096ebbb5882";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-  </body>
+	<p>图片高宽，和定位可以直接用css gaga 工具生成，也可以省掉这些琐碎的工作。不过这个工具有平台限制，目前好像只有windows版。</p> 
+  </body>  
 </html>

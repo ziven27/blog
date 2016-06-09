@@ -11,67 +11,57 @@
     <meta name="author" content="ziven27,heartstar27@qq.com" />
     <meta name="baidu-site-verification" content="mSgh5Wzaiu" />
     <title>ziven27 - font-face</title>
-    <link rel="shortcut icon" href="src/favicon.ico" />
-    <link rel="stylesheet" href="static/blog.css">
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link rel="stylesheet" href="../static/blog.css">
   </head>
   <body>
-    <h1>font-face</h1>
-    <p><a href="../index.html">首页</a> &gt; <a href="../index.html">博客</a></p>
-    
+    <h1><a href="../index.html">27前端博客</a></h1>
+    <h2>font-face </h2>
     <p>设计师做的高保真原型图，难免会用到艺术字体。</p>
 <p>采用切片的方式，简单，粗暴，节省时间。除了retina屏其它兼容性也是一流。但是在修改的时候，会花很大的力气。即使只是修改文字大小，也需要重新切图，更别说修改文字，或者改变文字颜色了。</p>
 <p>有没有想过，文字本来就应该是它原本的样子。只是看起来像，似乎不和情理。</p>
 <p>之所以不直接使用艺术字体，最大的一个问题就是字体文件，一般都太大了。轻轻松松就上兆的节奏。在网页这种流量寸土寸金的地方，真的是很难应用起来。</p>
 <p>我们在一个网页上一般用到的艺术字体的地方，往往只有banner和大标题。其实真的算下来也没有几个字。如果我们能把用到的字单独存在一起，组成一个字体文件，这不就解决了字体文件太大的问题了吗？</p>
 <h3>准备字体形状</h3>
-<img src="font-face/1.png" height="561" width="899" alt="1.png" title="">
+<img src="../static/font-face/1.png" height="561" width="899" alt="1.png" title="">
 <ol>
 	<li>将文字，分解成一个字一个图层。</li>
 	<li>选中所有图层，右键转换为形状。</li>
 	<li>选中所有图层，右键导出为…</li>
 </ol>
 <h3>导出svg图片</h3>
-<img src="font-face/2.png" height="662" width="980" alt="2.png" title="">
+<img src="../static/font-face/2.png" height="662" width="980" alt="2.png" title="">
 <ol>
 	<li>修改每一个图层的文件设置为svg。</li>
 	<li>导出</li>
 </ol>
 <h3>登录网站</h3>
-<img src="font-face/3.png" height="187" width="997" alt="3.png" title="">
+<img src="../static/font-face/3.png" height="187" width="997" alt="3.png" title="">
 <ol>
 	<li>登录<a href="https://icomoon.io" target="_blank">https://icomoon.io</a>, 选择右上角icoMoon App</li>
 	<li>或者直接登录<a href="https://icomoon.io/app/#/select" target="_blank">https://icomoon.io/app/#/select</a></li>
 </ol>
 <h3>导入图片</h3>
-<img src="font-face/4.png" height="503" width="1079" alt="4.png" title="">
+<img src="../static/font-face/4.png" height="503" width="1079" alt="4.png" title="">
 <ol>
 	<li>点击import Icons导入所有svg文字</li>
 	<li>选中你要打包的文字</li>
 	<li>点击右下角Generate Font</li>
 </ol>
 <h3>修改文字</h3>
-<img src="font-face/5.png" height="735" width="1156" alt="5.png" title="">
+<img src="../static/font-face/5.png" height="735" width="1156" alt="5.png" title="">
 <ol>
 	<li>修改文字映射</li>
 	<li>点击download</li>
 </ol>
 <h3>导出代码</h3>
-<img src="font-face/6.png" height="475" width="947" alt="6.png" title="">
+<img src="../static/font-face/6.png" height="475" width="947" alt="6.png" title="">
 <ol>
 	<li>打开style.css文件</li>
 	<li>拷贝@font-face代码</li>
 	<li>拷贝fonts文件夹</li>
 	<li>修改相关路径,修改字体名称</li>
 	<li>只需要在使用的时候设定font-family为我们制定的字体名称就可以了</li>
-</ol>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?30709f8a251d3a53a8856096ebbb5882";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-  </body>
+</ol> 
+  </body>  
 </html>

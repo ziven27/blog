@@ -1,6 +1,7 @@
-html, button, input, select, textarea { font: caption; }
-body { width: 98%; margin: 0 auto; max-width: 960px; }
-h1 { display: none; }
+html, button, input, select, textarea, pre, code { font: caption; }
+html{ line-height: 1.8; }
 a { color: #337ab7; text-decoration: none; }
 a:focus, a:hover { color: #23527c; text-decoration: underline; }
-.blog-list { }
+body { width: 92%; margin: 0 auto; max-width: 960px; overflow-x: hidden; }
+pre { word-break: break-all; word-wrap: break-word; }
+img{ max-width: 100%; height: auto; }
