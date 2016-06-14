@@ -10,15 +10,17 @@
     <meta name="keywords" content="ziven27, 个人博客, 个人网站, web前端,JavaScript,css,html" />
     <meta name="author" content="ziven27,heartstar27@qq.com" />
     <meta name="baidu-site-verification" content="mSgh5Wzaiu" />
-    <title>ziven27 - css-reset</title>
+    <title>ziven27 - 【网站七步曲-第一步】css-reset</title>
     <link rel="shortcut icon" href="../static/favicon.ico" />
     <link rel="stylesheet" href="../static/blog.css">
   </head>
   <body>
     <h1><a href="../index.html">27前端博客</a></h1>
-    <h2>css-reset </h2>
+    <h2>【网站七步曲-第一步】css-reset </h2>
     <blockquote>CSS reset就像是一种宁可错杀三千不可放过一个的做法。</blockquote>
-<p>一个最简单粗暴的css reset解决方案 <code> *{ margin:0; padding:0; }</code></p>
+<p>在这个浏览器奇葩朵朵开的世界，每个浏览器都有一套自己默认的样式标准（去掉页面所有的css文件，看到的就是浏览器默认的样式）。 </p>
+<p>所以我们需要css reset将所有浏览器打回原形，"尽量"保证他们的一致性。</p>
+<p>一个最简单粗暴的css reset解决方案 <code> *{ margin:0; padding:0; } </code>   这个用作demo还是非常不错的。</p>
 <p>多余的话我就不再累赘，想要更多可以参考我的技术男神张鑫旭的文章<a href="http://www.zhangxinxu.com/wordpress/?p=758" title="CSS reset的重新审视 – 避免样式重置" target="_blank" rel="external">CSS reset的重新审视 – 避免样式重置</a>。</p>
 <p>下面是我总结的一些基础css reset 供大家参考。我觉得每个网站都应该有自己单独的一套css reset。</p>
 <pre>
@@ -45,16 +47,17 @@ fieldset, img ,iframe { border: 0; }
 /*去除字体默认样式 不常用：dfn,var, cite, address, optgroup{ font-style:normal; }*/
 i,em{ font-style:normal; }
 strong, th{ font-weight:normal; }
+
 /*不常用： code,pre,samp,kbd{ font-size:100%; }*/
 small, button, input, select, textarea{ font-size:100%; }
 
 /*继承父级元素的字体大小，粗体还原*/
-h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal; } 
 
 /* 让表格边框可以为1 */
 table { border-collapse: collapse; border-spacing: 0; } 
-caption, th { text-align: left; }
- 
+caption, th { text-align: left; } 
+
 /*这个不常用*/
 /*hr{ margin:0; border:1px solid; border-width:1px 0 0 ; height:0; clear:both;  }*/
 </pre> 
