@@ -5,6 +5,10 @@ var rename = require('gulp-rename');
 gulp.task('hbs', function () {
 	var templatedata = {
 		"static": '../static',
+		"hmx": {
+			"title": "盒模型",
+			"static": "../static/p/hmx"
+		},
 		"reset": {
 			"title": "【网站七步曲-第一步】css-reset"
 		},
@@ -17,18 +21,21 @@ gulp.task('hbs', function () {
 		"font-face": {
 			"title": "font-face"
 		},
-		"index":{
-			"title":"ziven27 blog"
+		"box-layout":{
+			"title": 'css盒模型和布局'
+		},
+		"index": {
+			"title": "ziven27 blog"
 		}
 	};
-	var opt ={
+	var opt = {
 		// ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
 		// partials : {
 		// 	footer : '<footer>the end212312</footer>'
 		// },
-		batch : ['./hb/partials'],
-		helpers : {
-			capitals : function(str){
+		batch: ['./hb/partials'],
+		helpers: {
+			capitals: function (str) {
 				return str.toUpperCase();
 			}
 		}
@@ -51,5 +58,5 @@ gulp.task('hbs', function () {
 
 gulp.task('watch', function () {
 	gulp.run('hbs');
-    gulp.watch('./hb/**/*.hbs', ['hbs']);
+	gulp.watch('./hb/**/*.hbs', ['hbs']);
 });
