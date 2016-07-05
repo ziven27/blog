@@ -1,0 +1,174 @@
+<p><a href="reset.html">上一步</a>我们统一了浏览器默认的样式。接下来我们将开始基础库的搭建。</p>
+<p>多余的话我就不再累赘，想要更多可以参考我的技术男神张鑫旭的这两篇文章<a href="http://www.zhangxinxu.com/wordpress/?p=916" title="CSS样式分离之再分离" target="_blank" rel="external">CSS样式分离之再分离</a>， <a href="http://www.zhangxinxu.com/wordpress/?p=1098" title="精简高效的CSS命名准则/方法" target="_blank" rel="external">精简高效的CSS命名准则/方法</a>。</p>
+<p>不是我不想写，而是男神真的写的太好了，我也只能稍微总结一下。</p>
+<p>以下是我常用的一些样式。着重看一下有注释的地方，样式不多，却是很常用的几个样式。这个库还是得根据自己实际情况来，有的多余的不常用的部分可以去掉。</p>
+<pre>
+.dn { display: none; }
+.di { display: inline; }
+.db { display: block; }
+.dib { display: inline-block; }
+.w10p { width: 10%; }
+.w15p { width: 15%; }
+.w20p { width: 20%; }
+.w25p { width: 25%; }
+.w30p { width: 30%; }
+.w33p { width: 33.3%; }
+.w40p { width: 40%; }
+.w50p { width: 50%; }
+.w60p { width: 60%; }
+.w66p { width: 66.6%; }
+.w70p { width: 70%; }
+.w75p { width: 75%; }
+.w80p { width: 80%; }
+.w90p { width: 90%; }
+.w100p { width: 100%; }
+.lh14 { line-height: 14px; }
+.lh16 { line-height: 16px; }
+.lh18 { line-height: 18px; }
+.lh20 { line-height: 20px; }
+.lh22 { line-height: 22px; }
+.lh24 { line-height: 24px; }
+.m0 { margin: 0; }
+.ml1 { margin-left: 1px; }
+.ml2 { margin-left: 2px; }
+.ml5 { margin-left: 5px; }
+.ml10 { margin-left: 10px; }
+.ml15 { margin-left: 15px; }
+.ml20 { margin-left: 20px; }
+.ml30 { margin-left: 30px; }
+.mr1 { margin-right: 1px; }
+.mr2 { margin-right: 2px; }
+.mr5 { margin-right: 5px; }
+.mr10 { margin-right: 10px; }
+.mr15 { margin-right: 15px; }
+.mr20 { margin-right: 20px; }
+.mr30 { margin-right: 30px; }
+.mt1 { margin-top: 1px; }
+.mt2 { margin-top: 2px; }
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mb1 { margin-bottom: 1px; }
+.mb2 { margin-bottom: 2px; }
+.mb5 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb30 { margin-bottom: 30px; }
+.ml-1 { margin-left: -1px; }
+.mr-1 { margin-right: -1px; }
+.mt-1 { margin-top: -1px; }
+.mb-1 { margin-bottom: -1px; }
+.ml-3 { margin-left: -3px; }
+.mr-3 { margin-right: -3px; }
+.mt-3 { margin-top: -3px; }
+.mb-3 { margin-bottom: -3px; }
+.ml-20 { margin-left: -20px; }
+.mr-20 { margin-right: -20px; }
+.mt-20 { margin-top: -20px; }
+.mb-20 { margin-bottom: -20px; }
+.p0 { padding: 0; }
+.p1 { padding: 1px; }
+.pl1 { padding-left: 1px; }
+.pt1 { padding-top: 1px; }
+.pr1 { padding-right: 1px; }
+.pb1 { padding-bottom: 1px; }
+.p2 { padding: 2px; }
+.pl2 { padding-left: 2px; }
+.pt2 { padding-top: 2px; }
+.pr2 { padding-right: 2px; }
+.pb2 { padding-bottom: 2px; }
+.pl5 { padding-left: 5px; }
+.p5 { padding: 5px; }
+.pt5 { padding-top: 5px; }
+.pr5 { padding-right: 5px; }
+.pb5 { padding-bottom: 5px; }
+.p10 { padding: 10px; }
+.pl10 { padding-left: 10px; }
+.pt10 { padding-top: 10px; }
+.pr10 { padding-right: 10px; }
+.pb10 { padding-bottom: 10px; }
+.p15 { padding: 15px; }
+.pl15 { padding-left: 15px; }
+.pt15 { padding-top: 15px; }
+.pr15 { padding-right: 15px; }
+.pb15 { padding-bottom: 15px; }
+.p20 { padding: 20px; }
+.pl20 { padding-left: 20px; }
+.pt20 { padding-top: 20px; }
+.pr20 { padding-right: 20px; }
+.pb20 { padding-bottom: 20px; }
+.p30 { padding: 30px; }
+.pl30 { padding-left: 30px; }
+.pt30 { padding-top: 30px; }
+.pr30 { padding-right: 30px; }
+.pb30 { padding-bottom: 30px; }
+.l50p { left: 50%; }
+.t50p { top: 50%; }
+.t0 { top: 0; }
+.l0 { left: 0; }
+.r0 { right: 0; }
+.b0 { bottom: 0; }
+.fs0 { font-size: 0; }
+.fs10 { font-size: 10px; }
+.fs12 { font-size: 12px; }
+.fs13 { font-size: 13px; }
+.fs14 { font-size: 14px; }
+.fs16 { font-size: 16px; }
+.fs18 { font-size: 18px; }
+.fs20 { font-size: 20px; }
+.fs24 { font-size: 24px; }
+.tac { text-align: center; }
+.tar { text-align: right; }
+.tal { text-align: left; }
+.taj { text-align: justify; }
+.ls-1 { letter-spacing: -1px; }
+.ls0 { letter-spacing: 0; }
+.ls1 { letter-spacing: 1px; }
+.wsn { white-space: nowrap; }
+.wwbw { word-wrap: break-word; }
+.vam { vertical-align: middle; }
+.vab { vertical-align: bottom; }
+.vat { vertical-align: top; }
+.va-2 { vertical-align: -2px; }
+.fl { float: left; *display: inline; }
+.fr { float: right; }
+.cb { clear: both; }
+.pr { position: relative; }
+.pa { position: absolute; }
+.pf { position: fixed; }
+.zi1 { z-index: 1; }
+.zi2 { z-index: 2; }
+.cp { cursor: pointer; }
+.cd { cursor: default; }
+.oh { overflow: hidden; }
+.oa { overflow: auto; }
+.vh { visibility: hidden; }
+.vv { visibility: visible; }
+.z { *zoom: 1; }
+
+/*水平居中*/
+.auto { margin-left: auto; margin-right: auto; }
+
+/*清除浮动（一般习惯用clearfix作为名字，因为太常用了所以我用了缩写）*/
+.cf { *zoom: 1; }
+.cf:after { display: table; content: ''; clear: both; }
+
+/*自适应宽度（这个简直就是前端里面的布局神器）*/
+.cell { display: table-cell; *display: inline-block; width: 2000px; *width: auto; }
+
+/*文本超出显示点点点*/
+.ell { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+/*动画*/
+.trans { -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+/*使元素无效*/
+.disabled { color: #acacac !important; border-color: #acacac !important; text-shadow: 1px 1px #fff !important; outline: 0 !important; cursor: not-allowed !important; }
+.disabled:hover { text-decoration: none !important; }
+
+/*隐藏文字*/
+.text-no{ line-height: 200px; overflow: hidden; }
+</pre>

@@ -2,44 +2,61 @@ var gulp = require('gulp');
 var hbsmaster = require('gulp-handlebars-master');
 var rename = require('gulp-rename');
 
-gulp.task('init', function () {
+gulp.task('hbs', function () {
 	var templatedata = {
-		"css-reset": {
-			"title": "css-reset"
+		"static": '../static',
+		"hmx": {
+			"title": "盒模型",
+			"static": "../static/p/hmx"
+		},
+		"reset": {
+			"title": "【网站七步曲-第一步】css-reset"
+		},
+		"base": {
+			"title": "【网站七步曲-第二步】css-base"
+		},
+		"global": {
+			"title": "【网站七步曲-第三步】css-global"
 		},
 		"font-face": {
 			"title": "font-face"
 		},
-		"css-sprite":{
-			"title": "css-sprite"		
+		"box-layout":{
+			"title": 'css盒模型和布局'
 		},
-		"index":{
-			"title":"ziven27 blog"
+		"index": {
+			"title": "ziven27 blog"
 		}
 	};
-	var opt ={
+	var opt = {
 		// ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
 		// partials : {
 		// 	footer : '<footer>the end212312</footer>'
 		// },
-		batch : ['./hb/partials'],
-		helpers : {
-			capitals : function(str){
+		batch: ['./hb/partials'],
+		helpers: {
+			capitals: function (str) {
 				return str.toUpperCase();
 			}
 		}
 	};
-	gulp.src('./hb/pages/*.hbs')
-		.pipe(hbsmaster('./hb/layout.hbs', templatedata, opt))
+
+	gulp.src('./hb/pages/**/*.hbs')
+		.pipe(hbsmaster('./hb/layouts/page.hbs', templatedata, opt))
 		.pipe(rename({
 			extname: ".html"
 		}))
 		.pipe(gulp.dest('./p'));
 
 	gulp.src('./hb/index.hbs')
-		.pipe(hbsmaster('./hb/layout.hbs', templatedata, opt))
+		.pipe(hbsmaster('./hb/layouts/index.hbs', templatedata, opt))
 		.pipe(rename({
 			extname: ".html"
 		}))
 		.pipe(gulp.dest(''));
+});
+
+gulp.task('watch', function () {
+	gulp.run('hbs');
+	gulp.watch('./hb/**/*.hbs', ['hbs']);
 });

@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="zh-cmn-Hans">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="description" content="ziven27的博客" />
-    <meta name="description" content="ziven27的主页" />
-    <meta name="keywords" content="ziven27, 个人博客, 个人网站, web前端,JavaScript,css,html" />
-    <meta name="author" content="ziven27,heartstar27@qq.com" />
-    <meta name="baidu-site-verification" content="mSgh5Wzaiu" />
-    <title>ziven27 - css-reset</title>
-    <link rel="shortcut icon" href="src/favicon.ico" />
-    <link rel="stylesheet" href="static/blog.css">
-  </head>
-  <body>
-    <h1>css-reset</h1>
-    <p><a href="../index.html">首页</a> &gt; <a href="../index.html">博客</a></p>
-    
-    <p><blockquote>CSS reset就像是一种宁可错杀三千不可放过一个的做法。</blockquote></p>
-<p>一个最简单粗暴的css reset解决方案 <code class="m-code" style="height:1.5em;"> *{ margin:0; padding:0; }</code></p>        
+<blockquote>CSS reset就像是一种宁可错杀三千不可放过一个的做法。</blockquote>
+<p>在这个浏览器奇葩朵朵开的世界，每个浏览器都有一套自己默认的样式标准（去掉页面所有的css文件，看到的就是浏览器默认的样式）。 </p>
+<p>所以我们需要css reset将所有浏览器打回原形，"尽量"保证他们的一致性。</p>
+<p>一个最简单粗暴的css reset解决方案 <code> *{ margin:0; padding:0; } </code>   这个用作demo还是非常不错的。</p>
 <p>多余的话我就不再累赘，想要更多可以参考我的技术男神张鑫旭的文章<a href="http://www.zhangxinxu.com/wordpress/?p=758" title="CSS reset的重新审视 – 避免样式重置" target="_blank" rel="external">CSS reset的重新审视 – 避免样式重置</a>。</p>
 <p>下面是我总结的一些基础css reset 供大家参考。我觉得每个网站都应该有自己单独的一套css reset。</p>
-<pre class="m-code">
-	/*重置间距*/
+<pre>
+/*重置间距*/
 ul, ol, fieldset{ margin: 0; padding: 0; }
 th, td, legend{ padding:0; }
 body, h1, h2, h3, h4, h5, h6, p, dl, dd, form, textarea { margin:0; }
@@ -60,14 +42,3 @@ caption, th { text-align: left; }
 /*这个不常用*/
 /*hr{ margin:0; border:1px solid; border-width:1px 0 0 ; height:0; clear:both;  }*/
 </pre>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?30709f8a251d3a53a8856096ebbb5882";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-  </body>
-</html>

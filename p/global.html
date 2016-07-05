@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="description" content="ziven27的博客" />
+    <meta name="description" content="ziven27的主页" />
+    <meta name="keywords" content="ziven27, 个人博客, 个人网站, web前端,JavaScript,css,html" />
+    <meta name="author" content="ziven27,heartstar27@qq.com" />
+    <meta name="baidu-site-verification" content="mSgh5Wzaiu" />
+    <title>ziven27 - 【网站七步曲-第三步】css-global</title>
+    <base target="_blank" />
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link rel="stylesheet" href="../static/blog.css">
+  </head>
+  <body>
+    <h1><a href="../index.html">27前端博客</a></h1>
+    <h2>【网站七步曲-第三步】css-global </h2>
+    <p>前两步，我们都是可以复用的东西。在不同的项目中，只需要稍加修改就可以使用了。</p>
+<p>后面这几步我们都需要基于项目的实际情况来构建。一般我们会从UI那里拿到我们项目的高保真的PSD文件（也不排除一些坑爹的项目给的只是一个奇丑无比的原型图）。</p>
+<pre>
+	html {
+		background-color: #fff;
+		color: #666;
+	}
+	html, input, button, textarea, select {
+		/* 采用系统控件默认的样式,来自<a href="http://www.zhangxinxu.com/wordpress/?p=5214">CSS font关键字属性值的简单研究</a>）*/
+		font: caption; 
+		font-size: 14px;
+		line-height: 20px;
+	}
+	a {
+		color: #08c;
+	}
+	a:focus, a:hover {
+		color: #23527c;
+		text-decoration: underline;
+	}	
+	.wrap{
+		/* 超过这个宽度的地方就会留白。 */
+		width:960px; 
+		/* 建议不要写成 margin:0 auto; 不然这个样式不生效&lt;div class="wrap mt20"&gt;margin-top:20px;&lt;/div&gt;*/
+		margin-left:auto;  
+		margin-right:auto;
+		/* 我们用这个类的时候，基本就是创建了一个新的画布，所以设定position我觉得还是挺有必要的。 */
+		position:relative;
+	}
+
+	/* 基础颜色 */
+	.c-em { color: #333; }
+	.c-small { color: #999; }
+	.c-danger { color: #a94442; }
+	.c-warning { color: #8a6d3b; }
+	.c-success { color: #3c763d; }
+	.c-primary { color: #337ab7; }
+	.c-info { color: #31708f; }	
+	.c-fff { color: #fff; }
+
+	/* 在html5中 "<span title="标签定义与文本中其余部分不同的部分，并把这部分文本呈现为斜体文本。在没有其他元素可以使用，请使用 &lt;i&gt; 标签。">&lt;i&gt;</span>" 。所以用i标签来作为图标的定义是再好不过了。当然也不排除会需要定义在其它的标签比如 span 或者 a 上。所以又定义了一个.i的类。 */
+	i, .i{
+		display:inline-block;
+		overflow:hidden; 
+		background-repeat:no-repeat; 
+		vertical-align:middle;
+	}
+
+	/* 按钮组件基类 */
+	.bt{
+		display:inline-block;
+		text-align:center;
+		white-space: nowrap;
+		cursor: pointer;
+		vertical-align:middle;
+	}
+</pre> 
+  </body>  
+</html>
