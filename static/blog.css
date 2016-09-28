@@ -1,7 +1,0 @@
-html, button, input, select, textarea, pre, code { font: caption; font-size: 14px; }
-html { line-height: 1.8; background-color: #fafafa; }
-a { color: #337ab7; text-decoration: none; }
-a:focus, a:hover { color: #23527c; text-decoration: underline; }
-body { width: 100%; margin: 0 auto; max-width: 940px; padding:1% 2%; overflow-x: hidden; background-color: #fff; }
-pre { white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; overflow: hidden; border: 1px dashed #ddd; }
-img { max-width: 100%; height: auto; }
