@@ -8,12 +8,27 @@
 
 * GitHub： [@ziven27](https://github.com/ziven27)
 * 网站： [@ziven27](http://www.ziven27.com)
+* more：[Contact Me...](https://github.com/ziven27/blog/wiki/About)
 
 ## 捐助
 
-#### 为什么要捐助？
-
+### 为什么要捐助？
 就是想任性的让你请人家喝杯咖啡嘛！
+
+
+### 微信
+用微信扫描以下二维码，即可发起转账。
+（请核对收款人信息为 ziven27。另建议在本页留言注明打赏原因。）
+
+![wx](https://cloud.githubusercontent.com/assets/7261176/19029503/703b3e1c-8979-11e6-8f7a-d1dab9f1693b.png)
+
+
+### 支付宝
+用支付宝钱包 app 扫描以下二维码，即可发起转账。
+（请核对收款账户为 156****7125。另建议在转账备注中注明打赏原因。）
+
+![zfb](https://cloud.githubusercontent.com/assets/7261176/19029507/76aa240c-8979-11e6-9d3e-0714fee08639.png)
+
 
 ## 版权声明
 
